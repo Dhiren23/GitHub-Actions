@@ -1,16 +1,13 @@
+name: CI/CD Pipleline
 on:
    push:
       branches: [ "env/prd" ]
    # pull_request:
    #    branches: [ "env/prd" ]
    workflow_dispatch:
- 
 jobs:
-   Infra_Deployment:
+First_Job:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      
-      - name: 'Hello World'
-         run: echo "Hello World"
+      - name: 'First_Job'
+        run: echo "First_Job"
