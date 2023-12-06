@@ -15,5 +15,5 @@ jobs:
       - name: 'Hello World'
          run: echo "Hello World"
       
-      - name: Docker Login
+      - name: "Docker Login"
          uses: action_name
