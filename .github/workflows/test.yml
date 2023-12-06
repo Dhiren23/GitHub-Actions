@@ -1,0 +1,19 @@
+on:
+   push:
+      branches: [ "env/prd" ]
+   # pull_request:
+   #    branches: [ "env/prd" ]
+   workflow_dispatch:
+ 
+jobs:
+   Infra_Deployment:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: 'Hello World'
+         run: echo "Hello World"
+ 
+      - name: Docker Login
+         uses: action_name
